@@ -11,11 +11,11 @@ public class MovingWindowMain {
 		Dimension d=Toolkit.getDefaultToolkit().getScreenSize();
 		Point p=new Point(d.width/2,d.height/2);
 		int numWin=2;
-		int range=10; // Range of the velocities
+		int range=20; // Range of the velocities
 		if(args.length>0)
 			numWin=Integer.parseInt(args[0]);
 
-		MultipleMovingWindow window[] =new MultipleMovingWindow[numWin];
+		Multi window[] =new Multi[numWin];
 
 		for(int win=0;win<numWin;win++)
 		{
@@ -26,7 +26,7 @@ public class MovingWindowMain {
 
 			System.out.println(velx+" "+vely);
 
-			window[win]=new MultipleMovingWindow(velx,vely,d);
+			window[win]=new Multi(velx,vely,d);
 			window[win].setLocation(p);
 			window[win].setVisible(true);	
 		}

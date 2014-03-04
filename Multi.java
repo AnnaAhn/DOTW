@@ -2,13 +2,13 @@ import javax.swing.*;
 
 import java.awt.*;
 
-public class MultipleMovingWindow extends JFrame implements Runnable {
+public class Multi extends JFrame implements Runnable {
 	private static Point psion = new Point();
 	double velx,vely;
 	int delay=50;
 	Dimension d;
 	int wid,ht;
-	public MultipleMovingWindow(double velx,double vely,Dimension d) {
+	public Multi(double velx,double vely,Dimension d) {
 		super("Dancing Window");
 		this.velx=velx;
 		this.vely=vely;
@@ -76,6 +76,6 @@ public class MultipleMovingWindow extends JFrame implements Runnable {
 	}
 
 	public static void setPsion(Point psion) {
-		MultipleMovingWindow.psion = psion;
+		Multi.psion = psion;
 	}
 }
